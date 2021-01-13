@@ -1,4 +1,6 @@
-# Copyright (C) 2020 Fluid
+#
+# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2021 Pixel Experience
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,24 +15,20 @@
 # limitations under the License.
 
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Bootanimation Resolution
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := fluid_miatoll
+PRODUCT_NAME := aosp_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6250
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Gapps
 IS_PHONE := true
 TARGET_INCLUDE_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
-DISABLE_DEFAULT_CAMERA := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-FLUID_BUILD_TYPE := OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=Ramisky \
-  ro.fluid.cpu=SDM720G
