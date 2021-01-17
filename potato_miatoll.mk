@@ -1,6 +1,7 @@
 #
 # Copyright (C) 2020 The LineageOS Project
 # Copyright (C) 2021 Pixel Experience
+# Copyright (C) 2021 Potato Open Sauce Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,20 +16,15 @@
 # limitations under the License.
 
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := aosp_miatoll
+PRODUCT_NAME := potato_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6250
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# Gapps
-IS_PHONE := true
-TARGET_INCLUDE_GAPPS := true
-TARGET_GAPPS_ARCH := arm64

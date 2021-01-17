@@ -1,0 +1,14 @@
+[
+  {
+    "remote": "github",
+    "repository": "kernel_xiaomi_sm6250",
+    "target_path": "kernel/xiaomi/sm6250",
+    "branch": "dumaloo-release"
+  },
+  {
+    "remote": "github",
+    "repository": "device_xiaomi_sm6250-common",
+    "target_path": "device/xiaomi/sm6250-common",
+    "branch": "dumaloo-release"
+  }
+]
