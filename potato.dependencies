@@ -5,7 +5,7 @@
     },
     {
         "repository":   "PotatoDevices/vendor_xiaomi_miatoll",
-        "target_path":  "vendor/xiaomi/miatoll
+        "target_path":  "vendor/xiaomi/miatoll"
     },
     {
         "repository":   "PotatoDevices/hardware_xiaomi",
