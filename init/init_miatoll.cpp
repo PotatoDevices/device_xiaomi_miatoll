@@ -94,7 +94,7 @@ void load_device_properties() {
     } else if (hwname == "gram") {
         set_device_props("POCO", "gram", "POCO M2 Pro");
         property_override("ro.build.description",
-                                "gram_in-user 11 RKQ1.200826.002 V12.5.2.0.RJPINXM release-keys");
+                                "gram_in-user 11 RKQ1.200826.002 V12.5.3.0.RJPINXM release-keys");
     } else if (hwname == "joyeuse") {
         set_device_props("Redmi", "joyeuse", "Redmi Note 9 Pro");
         property_override("ro.build.description",
