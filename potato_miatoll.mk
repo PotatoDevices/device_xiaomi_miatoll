@@ -14,6 +14,11 @@ $(call inherit-product, device/xiaomi/miatoll/atoll.mk)
 # Inherit some common POSP stuff.
 $(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
+# Inherit Google Camera
+ifeq ($(WITH_GMS), true)
+$(call inherit-product, vendor/xiaomi/miatoll-gcam/miatoll-gcam-vendor.mk)
+endif
+
 # Device identifier
 PRODUCT_NAME := potato_miatoll
 PRODUCT_DEVICE := miatoll
