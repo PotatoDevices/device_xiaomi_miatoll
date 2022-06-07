@@ -31,4 +31,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Override build fingerprint
-BUILD_FINGERPRINT := google/redfin/redfin:12/SP2A.220505.002/8353555:user/release-keys
+BUILD_FINGERPRINT := google/redfin/redfin:12/SQ3A.220605.009.A1/8643238:user/release-keys
